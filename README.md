@@ -71,6 +71,11 @@ _Again_, **a**, means the phrase is even harder to remember so it will be put at
 -   [queue.cs](#queuecsv)
 
 
+### Map of the Program
+
+![map](map_sayings.png)
+
+
 ### sayings.py
 
 `sayings.py` is the entry point to the program. Running it in the terminal with Python 3 brings you to a simple CLI interface.
