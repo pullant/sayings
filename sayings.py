@@ -1,4 +1,3 @@
-# python3 ./sayings.py
 # Python 3.12.0
 
 import config
