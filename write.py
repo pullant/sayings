@@ -51,16 +51,11 @@ def write_phrase():
             # (\r\n or \n) (ID,date,days,phrase = 19)
             # total from 0 to 21 use phrases.tell() to check
 
-        # TODO - extra feature
-        # if I want to add delete entry functionality
-        # - check if PHRASES has headers but it is empty
-        # elif phrases.readline() == '':
-        # - get ID from INFO since there is no last ID
-        # in PHRASES
-        # - go to end of file
-        # phrases.seek(0, 2)
+        elif phrases.readline() == '': # check if PHRASES has headers but it is empty
+            ID = '0' # set new first ID
 
         else:
+            phrases.seek(0) # back to beginning of phrases
             # get last ID and set stream to the end of the file to append new phrase
             ID = phrases.readlines()[-1].strip().split(',')[0]
             ID = int(ID) + 1
